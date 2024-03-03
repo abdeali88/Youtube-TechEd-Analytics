@@ -18,4 +18,11 @@ This project focuses on analyzing and extracting insights from educational video
 
 - **Serverless Architecture with Lambda**: Automated data transformations and loading into Redshift by triggering Lambda functions upon S3 file uploads, ensuring real-time data updates.
 
+
+## Data Model
+The data model includes three main tables:
+
+- **Fact Table (_fact_videos_)**: Contains video-related metrics and sentiment counts.
+- **Dimension Tables**: Include information about videos (_dim_video_info_), comments (_dim_comments_), and topics (_dim_topic_).
+
 ![Data Model Diagram](/data_model_diagram.jpg)
