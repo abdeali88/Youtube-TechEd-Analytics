@@ -22,7 +22,7 @@ dag = DAG(
     'youtube_extraction_dag',
     default_args=default_args,
     description='DAG to extract YouTube videos',
-    schedule_interval='@daily',  # Set to run daily
+    schedule_interval='@daily',  # Set to run daily for each topic
 )
 
 
