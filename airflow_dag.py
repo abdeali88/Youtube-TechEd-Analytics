@@ -11,7 +11,6 @@ topics = ["Machine Learning", "Cyber Security", "Python", "Data Science", "Data 
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2022, 6, 1, 0, 0),  # Adjust the start date and time
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -27,13 +26,11 @@ dag = DAG(
 )
 
 
-# Dummy Start Operator
 start = DummyOperator(
     task_id='start',
     dag=dag,
 )
 
-# Dummy End Operator
 end = DummyOperator(
     task_id='end',
     dag=dag,
