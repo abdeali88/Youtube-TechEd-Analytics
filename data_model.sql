@@ -20,7 +20,7 @@ CREATE TABLE dim_video_info (
     description TEXT,
     channel_title VARCHAR(255),
     channel_id VARCHAR(50),
-    tags VARCHAR(255) [], -- Assuming tags are stored as an array
+    tags VARCHAR(255) [],
     default_language VARCHAR(10),
     default_audio_language VARCHAR(10),
     duration VARCHAR(20),
