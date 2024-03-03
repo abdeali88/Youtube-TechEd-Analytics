@@ -50,7 +50,6 @@ def lambda_handler(event, context):
 
     # Load data into Redshift
     with redshift.cursor() as cursor:
-        # Assuming 'dim_topic' already contains entries for topics
         # Get the topic_id for the current topic
         cursor.execute(f"SELECT topic_id FROM dim_topic WHERE topic = '{topic}';")
         topic_id = cursor.fetchone()[0]
